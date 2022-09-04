@@ -49,26 +49,29 @@
 
 <div class="hero_area">
   
-  <div class="bg-box">
+
+  <!-- header section strats -->
+  <header class="header_section">
+  <div id="main">
+  <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+  </div>
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  </div>
+  </div>
+
+  </header>
+  <!-- end header section -->
+</div>
+
+<!-- food section -->
+<!--  -->
+<div class="bg-box">
     <img src="images/Asset 1@5x.png" style="opacity: 1 ;" alt="">
     
   </div>
-  <!-- header section strats -->
-  <header class="header_section">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg custom_nav-container ">
-        <a class="navbar-brand" href="index.php">
-          <span>
-
-          </span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" 
-        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-        aria-expanded="false" aria-label="Toggle navigation">
-          <span class=""> </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav  mx-auto ">
+<ul class="navbar-nav  mx-auto ">
             <li class="nav-item active">
               <a class="nav-link" href="">
                           <img src="images/Logo-White-En.png" alt="" width="100px;">
@@ -78,15 +81,7 @@
               <a class="nav-link eng" style=" font-family: 'GE SS Two Medium' " href="index.php">ع</a>
             </li>
           </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <!-- end header section -->
-</div>
-
-<!-- food section -->
-
+<!--  -->
 <section class="food_section layout_padding">
   <div class="container">
     <div class="heading_container heading_center">
