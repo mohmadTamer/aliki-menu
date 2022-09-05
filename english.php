@@ -53,7 +53,7 @@
 
   <div class="navbar navbar-expand bg-box">
   <img src="images/Asset 1@5x.png" style="opacity: 1 ;" alt="" class="bgimg">
-  <img src="images/Logo-White-en.png" alt="" width="130px">
+  <img src="images/Logo-White-en.png" alt="" width="100px">
 </div>
 
 
@@ -82,7 +82,7 @@
   </header>
   <!-- end header section -->
 </div>
-</div>
+
 
 <!-- food section -->
 <!--  -->

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html dir="rtl" lang="ar">
 
@@ -25,18 +24,15 @@
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-
   <!--owl slider stylesheet -->
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/owl.theme.default.css">
 
   <!-- nice select  -->
-  <!-- font awesome style -->
 
+  <!-- font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet" />
   <link href="//db.onlinewebfonts.com/c/125063e353c1f65c55ba1e3811969217?family=GE+SS+Two+Medium" rel="stylesheet" type="text/css"/>
@@ -46,44 +42,40 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
-
 </head>
 
-  <body class="sub_page">
+
+<body class="sub_page">
 
   <div class="hero_area">
-    
-    <div class="bg-box">
-    <img src="images/Asset 1@5x.png" style="opacity: 1 ;" alt="">
-      
-    </div>
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.php">
-            <span>
-            </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" 
+  <!-- header section strats -->
+  <header class="header_section">
+
+  <div class="navbar navbar-expand bg-box">
+  <img src="images/Asset 1@5x.png" style="opacity: 1 ;" alt="" class="bgimg">
+  <img src="images/Logo-White-ar.png" alt="" width="100px">
+  </div>
+
+
+  <div class="navbar navbar-expand-lg custom_nav-container " id="main">
+  <button class="navbar-toggler" onclick="openNav()" type="button" data-toggle="collapse" 
           data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
           aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  mx-auto ">
-              <li class="nav-item active">
-                <a class="nav-link" href="">
-                <img src="images/Logo-White-Ar.png" alt="" width="100px;">
-                <span class="sr-only">(current)</span> </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link eng" href="english.php">En</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+  </div>
+
+  <div id="mySidebar" class="sidebar">
+  <a class="nav-link" style="padding-top: 40px;" href="">
+        <img src="images/Logo-White-ar.png" alt="" width="100px;">
+      <span class="sr-only">(current)</span> </a>
+      <hr>
+  <a href="english.php">القائمه الإنكليزية</a>
+  <hr>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-window-close"></i></a>
+  </div>
+  </div>
+
     </header>
     <!-- end header section -->
   </div>
