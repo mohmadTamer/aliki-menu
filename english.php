@@ -50,10 +50,12 @@
 <div class="hero_area">
   <!-- header section strats -->
   <header class="header_section">
-  <div class="bg-box">
-  <img src="images/Asset 1@5x.png" style="opacity: 1 ;" alt="" class="bgimg">
 
-      </div>
+  <div class="navbar navbar-expand bg-box">
+  <img src="images/Asset 1@5x.png" style="opacity: 1 ;" alt="" class="bgimg">
+  <img src="images/Logo-White-en.png" alt="" width="130px">
+</div>
+
 
   <div class="navbar navbar-expand-lg custom_nav-container " id="main">
   <button class="navbar-toggler" onclick="openNav()" type="button" data-toggle="collapse" 
@@ -61,7 +63,6 @@
           aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
           </button>
-          <img src="images/Logo-black-Ar.png" alt="" width="100px;" class="logo">
   </div>
 
   <div id="mySidebar" class="sidebar">
