@@ -74,7 +74,7 @@
             <ul class="navbar-nav  mx-auto ">
               <li class="nav-item active">
                 <a class="nav-link" href="">
-                <img src="images/Logo-Black-Ar.png" alt="" width="100px;">
+                <img src="images/Logo-White-Ar.png" alt="" width="100px;">
                 <span class="sr-only">(current)</span> </a>
               </li>
               <li class="nav-item">

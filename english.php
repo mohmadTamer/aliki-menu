@@ -48,39 +48,51 @@
 <body class="sub_page">
 
 <div class="hero_area">
-  
-
   <!-- header section strats -->
   <header class="header_section">
-  <div id="main">
-  <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+  <div class="bg-box">
+  <img src="images/Asset 1@5x.png" style="opacity: 1 ;" alt="" class="bgimg">
+
+      </div>
+
+  <div class="navbar navbar-expand-lg custom_nav-container " id="main">
+  <button class="navbar-toggler" onclick="openNav()" type="button" data-toggle="collapse" 
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+          aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+          <img src="images/Logo-black-Ar.png" alt="" width="100px;" class="logo">
   </div>
+
   <div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
+  <a class="nav-link" style="padding-top: 40px;" href="">
+        <img src="images/Logo-White-En.png" alt="" width="100px;">
+      <span class="sr-only">(current)</span> </a>
+      <hr>
+  <a href="index.php">Arabic Menu</a>
+  <hr>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-window-close"></i></a>
+
   </div>
+
+
   </div>
 
   </header>
   <!-- end header section -->
 </div>
+</div>
 
 <!-- food section -->
 <!--  -->
-<div class="bg-box">
-    <img src="images/Asset 1@5x.png" style="opacity: 1 ;" alt="">
-    
-  </div>
-<ul class="navbar-nav  mx-auto ">
+
+<!-- <ul class="navbar-nav  mx-auto ">
             <li class="nav-item active">
-              <a class="nav-link" href="">
-                          <img src="images/Logo-White-En.png" alt="" width="100px;">
-              <span class="sr-only">(current)</span> </a>
             </li>
             <li class="nav-item">
               <a class="nav-link eng" style=" font-family: 'GE SS Two Medium' " href="index.php">ع</a>
             </li>
-          </ul>
+          </ul> -->
 <!--  -->
 <section class="food_section layout_padding">
   <div class="container">

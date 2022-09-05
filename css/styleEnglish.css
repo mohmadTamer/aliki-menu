@@ -16,7 +16,7 @@ body {
 
 
 .layout_padding {
-  padding: 90px 0;
+  padding: 0px 0;
 }
 
 .layout_padding2 {
@@ -39,14 +39,15 @@ body {
   padding-bottom: 90px;
 }
 
-h1,
+/* h1,
 h2 {
-  /* font-family: 'Dancing Script', cursive; */
-}
+  font-family: 'Dancing Script', cursive;
+} */
 .containr{
   max-width: 1320px;
   margin: 0 auto;
-  padding: 5rem .5rem;
+  /* padding: 0rem 0.5rem */
+  padding-bottom: 2rem;
 
 }
 
@@ -120,13 +121,15 @@ a:focus {
 /* navbar style */
 .bg-box {
   /* background-color: #BBE1C3; */
-  background-color: #F7B05B;
-  opacity: 1;
+  /* background-color: #F7B05B; */
+  /* opacity: 1; */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  display: flex;
+    align-items: center;
 }
 
 .bg-box img {
@@ -148,7 +151,7 @@ a:focus {
   height: 100%;
 }
 
-.sub_page .hero_area .bg-box img {
+.sub_page .hero_area .bg-box .bgimg {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -212,8 +215,9 @@ a:focus {
 
 .custom_nav-container .navbar-toggler {
 
-  padding: 0;
-  width: 37px;
+
+  padding: 5px;
+  width: 46px;
   height: 42px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -223,7 +227,7 @@ a:focus {
   display: block;
   width: 35px;
   height: 4px;
-  background-color: #ffffff;
+  background-color: #000029;
   margin: 7px 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -238,7 +242,7 @@ a:focus {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #000029;
   top: -10px;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
@@ -266,7 +270,86 @@ a:focus {
 }
 
 /*end header section*/
+/* sidebar style */
 
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Stay on top */
+  top: 0;
+  left: 0;
+  /* background-image: url("../images/Asset\ 1@5x.png"); */
+  background-color: #E63E4E;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  display: block;
+}
+.logo{
+  position: absolute;
+  margin: auto;
+  margin: 1px 123x;
+  -o-object-fit: cover;
+  object-fit: cover;
+
+}
+
+/* The sidebar links */
+.sidebar a {
+
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  transition: 0.3s;
+  display: block;
+}
+
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-toggler {
+    display: flex;
+}
+}
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  font-size: 40px;
+
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #000029;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #E63E4E;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
 
 /* ul.filters_menu {
   white-space: nowrap;
