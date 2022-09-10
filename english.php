@@ -152,6 +152,13 @@
       <!-- <img src="images/hot-dog/Mac___cheese_hot_dog.png" 
       width="50px" height="50px" alt=""> -->
       </li>
+      </div>
+        <div class="item" style="align-items:center">
+        <li data-filter=".drinks">
+          <h6 style="padding: 10px 0px 10px 0px;">Drinks</h6>
+      <!-- <img src="images/hot-dog/Mac___cheese_hot_dog.png" 
+      width="50px" height="50px" alt=""> -->
+      </li>
         </div>
         </ul>
 
@@ -209,7 +216,12 @@ $highestColumnIndex = \PhpOffice\PhpSpreadsheet\Cell\Coordinate::columnIndexFrom
                     <h6>
                     <?php
                         $value = $worksheet->getCellByColumnAndRow($col, $row)->getValue();
-                        echo $value." SAR" ; }
+                        echo $value." SAR" ." ." ; }
+                        for ($row = 6; $row <= 6; ++$row) {
+                          $value = $worksheet->getCellByColumnAndRow($col, $row)->getValue();
+                          echo "<span style='color:#ffbe33' >".
+                          ' <i class="fas fa-fire"></i> '.$value." Calories" ."</spam>";}
+                        
                     ?>
                     </h6>
                   </div>
@@ -222,7 +234,7 @@ $highestColumnIndex = \PhpOffice\PhpSpreadsheet\Cell\Coordinate::columnIndexFrom
           ?>
 <!-- salad CAT  -->
 
-          <div class="col-sm-6 col-lg-4 all Salad">
+          <!-- <div class="col-sm-6 col-lg-4 all Salad">
             <div class="box">
               <div>
                 <div class="img-box">
@@ -243,7 +255,7 @@ $highestColumnIndex = \PhpOffice\PhpSpreadsheet\Cell\Coordinate::columnIndexFrom
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

@@ -141,6 +141,13 @@
         width="50px" height="50px" alt=""> -->
         </li>
           </div>
+          <div class="item" style="align-items:center">
+          <li data-filter=".drinks">
+            <h6 style="padding: 10px 0px 10px 0px;">مشروبات</h6>
+        <!-- <img src="images/hot-dog/Mac___cheese_hot_dog.png" 
+        width="50px" height="50px" alt=""> -->
+        </li>
+          </div>
           </ul>
       
 <!-- Menu items -->
@@ -203,6 +210,10 @@ $highestColumnIndex = \PhpOffice\PhpSpreadsheet\Cell\Coordinate::columnIndexFrom
                         $value = $worksheet->getCellByColumnAndRow($col, $row)->getValue();
                         $value = str_replace($western_arabic, $eastern_arabic, $value);
                         echo $value. " ريال" ; }
+                        for ($row = 6; $row <= 6; ++$row) {
+                          $value = $worksheet->getCellByColumnAndRow($col, $row)->getValue();
+                          echo "<span style='color:#ffbe33'> ".
+                          ' <i class="fas fa-fire"></i> '.$value." كالوري" ."</spam>";}
                         ?>
                     </h6>
                   </div>
