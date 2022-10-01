@@ -53,7 +53,7 @@
 
   <div class="navbar navbar-expand bg-box">
   <img src="images/Asset 1@5x.png" style="opacity: 1 ;" alt="" class="bgimg">
-  <img src="images/Logo-White-ar.png" alt="" width="100px">
+  <img src="images/Logo-White-Ar.png" alt="" width="100px">
   </div>
 
 
@@ -67,10 +67,10 @@
 
   <div id="mySidebar" class="sidebar">
   <a class="nav-link" style="padding-top: 40px;" href="">
-        <img src="images/Logo-White-ar.png" alt="" width="100px;">
+        <img src="images/Logo-White-En.png" alt="" width="100px;">
       <span class="sr-only">(current)</span> </a>
       <hr>
-  <a href="english.php">القائمه الإنكليزية</a>
+  <a href="english.php" style="  font-family: 'Poppins', sans-serif;" >English menu</a>
   <hr>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-window-close"></i></a>
   </div>
@@ -161,7 +161,7 @@ $eastern_arabic = array('٠','١','٢','٣','٤','٥','٦','٧','٨','٩');
 
 require "vendor/autoload.php";
 $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xlsx();
-$spreadsheet = $reader->load("menu.xlsx");
+$spreadsheet = $reader->load("menuAR.xlsx");
 for ($sheet=1 ; $sheet<= $spreadsheet->getSheetCount(); $sheet++){
   $sheetname=$spreadsheet->getSheetNames();
 foreach($sheetname as $sheetname){
@@ -194,13 +194,22 @@ $highestColumnIndex = \PhpOffice\PhpSpreadsheet\Cell\Coordinate::columnIndexFrom
                     $value = $worksheet->getCellByColumnAndRow($col, $row)->getValue();
                     echo $value; }
                     for ($row = 4; $row <= 4; ++$row) {
+                      $value = $worksheet->getCellByColumnAndRow($col, $row)->getValue();
+                    if ($value==1){
                     ?>
-                  </h5>
+                      <i class="fas fa-duotone fas fa-pepper-hot" style="color:#B90005 ;" ></i>
+                      <?php
+                    }elseif ($value==0){
+                    }
+                  }
+                    for ($row = 5; $row <= 5; ++$row) {
+                    ?>
+                  </h5> 
                   <p class="desc">
                     <?php
                         $value = $worksheet->getCellByColumnAndRow($col, $row)->getValue();
                         echo $value; }
-                        for ($row = 5; $row <= 5; ++$row) {
+                        for ($row = 6; $row <= 6; ++$row) {
                     ?>
                   </p>
                   <div class="options">
@@ -210,7 +219,7 @@ $highestColumnIndex = \PhpOffice\PhpSpreadsheet\Cell\Coordinate::columnIndexFrom
                         $value = $worksheet->getCellByColumnAndRow($col, $row)->getValue();
                         $value = str_replace($western_arabic, $eastern_arabic, $value);
                         echo $value. " ريال" ; }
-                        for ($row = 6; $row <= 6; ++$row) {
+                        for ($row = 7; $row <= 7; ++$row) {
                           $value = $worksheet->getCellByColumnAndRow($col, $row)->getValue();
                           echo "<span style='color:#ffbe33'> ".
                           ' <i class="fas fa-fire"></i> '.$value." كالوري" ."</spam>";}
@@ -243,7 +252,7 @@ $highestColumnIndex = \PhpOffice\PhpSpreadsheet\Cell\Coordinate::columnIndexFrom
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span style="font-size:x-large">
-                  +966 0537477724
+                  +966 537477724
                 </span>
               </a>
             </div>

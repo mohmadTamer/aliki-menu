@@ -53,7 +53,7 @@
 
   <div class="navbar navbar-expand bg-box">
   <img src="images/Asset 1@5x.png" style="opacity: 1 ;" alt="" class="bgimg">
-  <img src="images/Logo-White-en.png" alt="" width="100px">
+  <img src="images/Logo-White-En.png" alt="" width="100px">
 </div>
 
 
@@ -67,10 +67,10 @@
 
   <div id="mySidebar" class="sidebar">
   <a class="nav-link" style="padding-top: 40px;" href="">
-        <img src="images/Logo-White-En.png" alt="" width="100px;">
+        <img src="images/Logo-White-Ar.png" alt="" width="100px;">
       <span class="sr-only">(current)</span> </a>
       <hr>
-  <a href="index.php">Arabic Menu</a>
+  <a href="index.php" style="  font-family: 'GE SS Two Medium';" >القائمة بالعربي</a>
   <hr>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-window-close"></i></a>
 
@@ -203,13 +203,22 @@ $highestColumnIndex = \PhpOffice\PhpSpreadsheet\Cell\Coordinate::columnIndexFrom
                     $value = $worksheet->getCellByColumnAndRow($col, $row)->getValue();
                     echo $value; }
                     for ($row = 4; $row <= 4; ++$row) {
+                      $value = $worksheet->getCellByColumnAndRow($col, $row)->getValue();
+                    if ($value==1){
+                    ?>
+                      <i class="fas fa-duotone fas fa-pepper-hot" style="color:#B90005 ;" ></i>
+                      <?php
+                    }elseif ($value==0){
+                    }
+                  }
+                    for ($row = 5; $row <= 5; ++$row) {
                     ?>
                   </h5>
                   <div class="desc">
                     <?php
                         $value = $worksheet->getCellByColumnAndRow($col, $row)->getValue();
                         echo $value; }
-                        for ($row = 5; $row <= 5; ++$row) {
+                        for ($row = 6; $row <= 6; ++$row) {
                     ?>
                   </div>
                   <div class="options">
@@ -217,7 +226,7 @@ $highestColumnIndex = \PhpOffice\PhpSpreadsheet\Cell\Coordinate::columnIndexFrom
                     <?php
                         $value = $worksheet->getCellByColumnAndRow($col, $row)->getValue();
                         echo $value." SAR" ." ." ; }
-                        for ($row = 6; $row <= 6; ++$row) {
+                        for ($row = 7; $row <= 7; ++$row) {
                           $value = $worksheet->getCellByColumnAndRow($col, $row)->getValue();
                           echo "<span style='color:#ffbe33' >".
                           ' <i class="fas fa-fire"></i> '.$value." Calories" ."</spam>";}
@@ -276,7 +285,7 @@ $highestColumnIndex = \PhpOffice\PhpSpreadsheet\Cell\Coordinate::columnIndexFrom
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call +966 0537477724
+                  Call +966 537477724
                 </span>
               </a>
             </div>
